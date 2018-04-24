@@ -31,6 +31,10 @@ pri_packer_setup_json:
 
   post-processors:
   - '{{pri_packer_setup_post_processors}}'
+  - type: manifest
+    keep_input_artifact: true
+    output: "{{man_packer_setup_host_type}}/manifest.json"
+    strip_path: true
 
 # we have this as a separate entry as the upload flag modifies this
 pri_packer_setup_post_processors:
