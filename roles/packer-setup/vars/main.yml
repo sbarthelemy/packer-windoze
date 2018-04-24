@@ -1,4 +1,4 @@
-# this is a yaml definiton of the JSON packer file
+# this is a yaml definition of the JSON packer file
 pri_packer_setup_json:
   builders:
   - type: virtualbox-iso
